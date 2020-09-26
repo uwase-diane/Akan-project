@@ -30,14 +30,14 @@
           
           </div>
           <div class="form-group">
-            <label for="exampleFormControlSelect1">Gender</label>
-            <select class="form-control">
-              <option id="female">Female</option>
-              <option id="male">Male</option>
-             
-            </select>
+            
+            <label for="gender">Gender:</label>
+            <br>
+            <input type="radio" name="gender" id="female" value="0">Male</input>
+            <input type="radio" name="gender" id="male" value="1">Female</input>
+            
           </div>
-          <button id = "demo"type="submit" class="btn btn-primary" onclick="calculateAkanDay();">submit</button>
+          <button id = "demo"type="submit" class="btn btn-primary" onclick="saveInformation();">submit</button>
         </div>
        
       </form>
