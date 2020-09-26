@@ -8,41 +8,56 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 </head>
-<body>
-    <form name="theForm" class="form">
-        <div class="jumbotron">
-            
-        <h3>FILL THE FORM BELOW </h3>
+<body style="background-image:url(images/light.jpg);">
+  <section>
+    <div class="container">
       
-        <div class="form-group">
-          <label for="number">Year of birth</label>
-          <input type="number" class="form-control" id="year" name="year">
+      
+        <h2 class="container-header">WELCOME TO AKAN NAMES</h2>
+        <h3>Get your akan name</h3>
+        <ul class="descrption">
+          <li>Akan names are derived from Ghanian culture.Get your Akan name by filling the form below</li>
+          <li>Names are based on gender and the date you were born.<a href="http://www.afropedea.org/akan-names">More infos on Akan names</a></li>
+          <li>Frequenlty in Ghana kids are given names using this 'AKAN NAMES culture'which may correspond to the day of the week they are born on.</li>
+        </ul>
+    
+    </div>
+  </section>
+    <form name="theForm" class="form">
+        <div class="middle-container">
+         
+            <h3 class="middle-con">FILL THE FORM BELOW </h3>
+          
+            <div class="form-group" class="col-md-2">
+              <label for="number">Year of birth</label>
+              <input type="number" class="form-control" id="year" name="year">
+            
+            </div>
+            <div class="form-group">
+                <label for="month">Month of birth</label>
+                <input type="number" class="form-control" id="month" name="month">
+              
+              </div>
+              <div class="form-group">
+                <label for="date">Date of birth</label>
+                <input type="number" class="form-control" id="date" name="date">
+              
+              </div>
+              <div class="form-group">
+                <label for="month">Gender</label><br>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio"  name="gender" id="radioFemale">Female
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio"  name="gender" id="radioMale">Male 
+                  </label>
+                </div>
+              </div>
+              <button id = "demo"type="submit" class="btn btn-primary button-dec" onclick="numberOfDay;">submit</button>
         
-        </div>
-        <div class="form-group">
-            <label for="month">Month of birth</label>
-            <input type="number" class="form-control" id="month" name="month">
-          
-          </div>
-          <div class="form-group">
-            <label for="date">Date of birth</label>
-            <input type="number" class="form-control" id="date" name="date">
-          
-          </div>
-          <div class="form-group">
-            <label for="month">Gender</label><br>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="radio"  name="gender" id="radioFemale">Female
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="radio"  name="gender" id="radioMale">Male 
-              </label>
-            </div>
-          </div>
-          <button id = "demo"type="submit" class="btn btn-primary" onclick="akanName();">submit</button>
         </div>
        
       </form>

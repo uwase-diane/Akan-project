@@ -1,0 +1,41 @@
+
+.form{
+    border: 1px solid;
+    background-color:  #fff;
+    margin: 50px 50px 50px 50px;
+    border-radius: 5px;
+    -transform: translate(50%,-50%);
+    background: rgba(0,0,0,0.2);
+}
+
+
+.middle-con{
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 25px;
+   color:white;
+}
+.button-dec{
+    margin:10px 20px;
+}
+.container{
+    border: 1px solid;
+    background-color: #fff;
+    margin: 20px 30px 10px 20px;
+    border-radius: 5px;
+    -transform: translate(50%,-50%);
+    background: rgba(0,0,0,0.2);
+    color: white;
+
+}
+.container-header{
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 25px;
+}
+h3{
+    text-align: center;
+}
+label{
+    color:  #fff;
+}
