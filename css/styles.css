@@ -58,3 +58,20 @@ footer{
     padding: 40px;
     text-align: center;
 }
+.container-centre{
+    padding-top: 60px;
+    color: white;
+    
+   
+}
+.names{
+    border: 1px solid #fff;
+    background-color: rgb(59, 47, 47);
+    
+    border-radius: 5px;
+    -transform: translate(50%,-50%);
+    background: rgb(255, 254, 254);
+    color: rgb(0, 0, 0);
+    width: 400px;
+    margin: auto;
+}
