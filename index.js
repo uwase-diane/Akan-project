@@ -4,12 +4,8 @@ var dd;
 var mm;
 var shortYear;
 var shortCentry;
-var numberOfDay;
 
-var maleAkanNames = ["Kwasi","Kwadwo", "Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-var femaleAkanNames = ["Akosua","Adwoa","Abenaa", "Akua","Yaa","Afua","Ama"];
-
-
+//CALCULATING DAY 
 function calculateAkanDay(){
 
 year = document.getElementById("year").value;
@@ -20,76 +16,60 @@ dd = document.getElementById("date").value;
 
 result = (((shortCentry/4) -2 * shortCentry-1) + ((5 * shortYear/4)) + (26 * (mm + 1)/10) + dd) % 7;
 
-console.log(Math.floor(result));
-   
+result = Math.floor(result);
+
+//NANIMG CONDITION
+var genders = document.getElementById("gender").value;
+   if(genders == "female"){
+       var akanNames;
+       if(result == 7){
+        akanNames = "Akosua";
+       }else if(result == 1){
+        akanNames = "Adwoa";
+       }else if(result == 2){
+        akanNames = "Abenaa";
+       }else if (result == 3){
+        akanNames = "Akua";
+       }else if(result == 4){
+        akanNames = "Yaa";
+
+       }else if(result == 5){
+        akanNames = "Afua";
+       }else if (result == 6){
+        akanNames = "Ama";
+       }
+   }
+   if(genders == "male"){
+    var akanNames;
+    if(result == 7){
+      akanNames = "Ama";
+    }else if(result == 1){
+      akanNames = "Kwadwo";
+    }else if(result == 2){
+      akanNames = "Kwabena";
+    }else if (result == 3){
+      akanNames = "Kwaku";
+    }else if(result == 4){
+      akanNames = "Yaw";
+
+    }else if(result == 5){
+      akanNames = "Kofi";
+    }else if (result == 6){
+      akanNames = "Kwame";
+    }
 }
-function genderFunction(){
-     if(document.getElementById("radioFemale").checked){
-            var gender = "female";
-     }
-  
-         else if (document.getElementById("radioMale").checked){
-            var gender = "male";
-         }else{
+//VALIDATION CONDITION
 
-           return false;
-         }
-        
-        
-         switch(gender){
-            case "female":
-          if(numberOfDay == 1){
-            alert("your Akan name is" +femaleAkanNames[0]);
-          }
-          else if(numberOfDay == 2){
-            alert("your Akan name is " +femaleAkanNames[1]);
-          }
-          else if(numberOfDay == 3){
-            alert("your Akan name is " +femaleAkanNames[2]);
-          }
-          else if (numberOfDay == 4){
-            alert("your Akan name is " +femaleAkanNames[3]);
-          }
-          else if (numberOfDay == 5){
-            alert("your Akan name is " +femaleAkanNames[4]);
-          }
-          else if (numberOfDay == 6){
-            alert("your Akan name is " +femaleAkanNames[5]);
-          }
-          else if (numberOfDay == 7){
-            alert("your Akan name is " +femaleAkanNames[6]);
-          }
-          break;
-          case "male":
-            if(numberOfDay == 1){
-              alert("your Akan name is" +maleAkanNames[0]);
-            }
-            else if(numberOfDay == 2){
-              alert("your Akan name is " +maleAkanNames[1]);
-            }
-            else if(numberOfDay == 3){
-              alert("your Akan name is " +maleAkanNames[2]);
-            }
-            else if (numberOfDay == 4){
-              alert("your Akan name is " +maleAkanNames[3]);
-            }
-            else if (numberOfDay == 5){
-              alert("your Akan name is " +maleAkanNames[4]);
-            }
-            else if (numberOfDay == 6){
-              alert("your Akan name is " +maleAkanNames[5]);
-            }
-            else if (numberOfDay == 7){
-              alert("your Akan name is " +maleAkanNames[6]);
-            }
-            break
-            default:
+if(dd <= 0 || dd > 31){
+  alert("invalid date, please go back and fill a proper date ");
+}else if (mm <=0 || mm > 31){
+  alert("invalif month ,please go back and fill a proper Month ");
+}
 
-          }
 
-  }
-  function akanName(){
-    numberOfDay = Math.floor(calculateAkanDay());
-    genderFunction();
- 
-  }
+document.getElementById("demo").innerHTML = alert("your akan is " + akanNames);
+
+}
+
+
+

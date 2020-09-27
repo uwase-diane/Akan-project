@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan Names</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" src="favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant:wght@300&family=Poiret+One&family=Ramabhadra&display=swap" rel="stylesheet">
 </head>
@@ -18,8 +18,8 @@
         <h3>Get your <span>akan name</span></h3>
         <ul class="descrption">
           <h4><strong>DESCR<span>IPTION</span></strong></h4>
-          <li>Akan names are derived from Ghanian culture.Get your Akan name by filling the form below</li><br>
-          <li>Names are based on gender and the date you were born.<a href="http://www.afropedea.org/akan-names">More infos on Akan names</a></li><br>
+          <li>Akan names are derived from Ghanian culture.Get your Akan name by filling the form below.</li><br>
+          <li>Names are based on gender and the date you were born.<a class="link" href="http://www.afropedea.org/akan-names">More infos on Akan names.</a></li><br>
           <li>Frequenlty in Ghana kids are given names using this <strong>AKAN NAMES culture</strong> which may correspond to the day of the week they are born on.</li><br>
           <p>Here are some Ghanian names: </p>
         </ul>
@@ -83,16 +83,16 @@
                 <label for="month">choose your Gender:</label><br>
                 <div class="form-check-inline">
                   <label class="form-check-label">
-                    <input type="radio"  name="gender" id="radioFemale">Female
+                    <input type="radio"  id="gender" value="female">Female
                   </label>
                 </div>
                 <div class="form-check-inline">
                   <label class="form-check-label">
-                    <input type="radio"  name="gender" id="radioMale">Male 
+                    <input type="radio"  id="gender" value="male">Male 
                   </label>
                 </div>
               </div>
-              <button id = "demo"type="submit" class="btn btn-outline-light button-dec" onclick="numberOfDay;">submit</button>
+              <button id = "demo"type="submit" class="btn btn-outline-light button-dec" onclick="calculateAkanDay();">submit</button>
         
         </div>
        

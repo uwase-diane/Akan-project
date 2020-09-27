@@ -7,6 +7,14 @@
     -transform: translate(50%,-50%);
     background: rgba(0,0,0,0.4);
 }
+.link{
+    color: #FF7300;
+    
+}
+.link:hover{
+    color: #ff0000;
+    text-decoration: none;
+}
 
 
 .middle-con{
