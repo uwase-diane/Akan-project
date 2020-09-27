@@ -40,7 +40,7 @@ var genders = document.getElementById("gender").value;
         akanNames = "Ama";
        }
    }
-   if(genders == "male"){
+   else if(genders == "male"){
     var akanNames;
     if(result == 7){
       akanNames = "Ama";
