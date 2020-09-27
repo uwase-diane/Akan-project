@@ -63,7 +63,7 @@ var genders = document.getElementById("gender").value;
 
 if(dd <= 0 || dd > 31){
   alert("invalid date, please go back and fill a proper date ");
-}else if (mm <=0 || mm > 31){
+}else if (mm <= 0 || mm > 12){
   alert("invalif month ,please go back and fill a proper Month ");
 }
 
