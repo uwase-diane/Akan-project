@@ -10,7 +10,7 @@ This project is a web application that takes a user's birthday and calculates th
 ![screenshot](https://res.cloudinary.com/auca/image/upload/v1601235883/form_rdrcxl.png)
 
 ### Click here to view My Page 
-![](https://uwase-diane.github.io/Akan-project/)
+![project link](https://uwase-diane.github.io/Akan-project/)
 
 
 ### Installation / setup instruction
