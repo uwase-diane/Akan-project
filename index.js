@@ -6,6 +6,7 @@ var shortYear;
 var shortCentry;
 
 //CALCULATING DAY 
+
 function calculateAkanDay(){
 
 year = document.getElementById("year").value;

@@ -24,11 +24,7 @@
    color:white;
    font-weight: bold;
 }
-.button-dec{
-    margin:10px 20px;
-    font-family: 'Ramabhadra', sans-serif;
-    
-}
+
 .descrption{
     border: 1px solid #fff;
     
@@ -62,7 +58,7 @@ h4{
 }
 label{
     color:  #fff;
-    
+    margin:10px 10px;
     font-family: 'Ramabhadra', sans-serif;
 }
 li{
@@ -99,4 +95,9 @@ footer{
 }
 span{
     color: #FF7300;
+}
+.btn{
+    color: #FF7300;
+    margin:10px 20px;
+    font-family: 'Ramabhadra', sans-serif;
 }
