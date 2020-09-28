@@ -20,8 +20,8 @@ result = (((shortCentry/4) -2 * shortCentry-1) + ((5 * shortYear/4)) + (26 * (mm
 result = Math.floor(result);
 
 //NANIMG CONDITION
-var genders = document.getElementById("gender").value;
-   if(genders == "female"){
+var g = document.getElementById("gender").value;
+   if(g == "female"){
        var akanNames;
        if(result == 7){
         akanNames = "Akosua";
@@ -40,7 +40,7 @@ var genders = document.getElementById("gender").value;
         akanNames = "Ama";
        }
    }
-   else if(genders == "male"){
+   else if(g == "male"){
     var akanNames;
     if(result == 7){
       akanNames = "Ama";
