@@ -31,7 +31,7 @@ This project is a web application that takes a user's birthday and calculates th
 ### BDD
 Enter century of birth eg 20 for 2019, Input Example 20 Output example 20
 
-Enter year of Birth eg 19 for 2019 Input Example 19 Output Example 19
+Enter year of Birth eg 19 for 2019 Input Example 19 Output Example 1
 
 Enter month of birth eg 1 for january Input example 1 Output example 1
 
